@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background: #e6e6e6;
+            padding: 20px;
+            justify-content: space-between;
+            display: flex;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+        header nav a{
+            margin-right: 10px;
+            text-decoration: none;
+            color: #e6e6e6;
+            transition: 500ms ease-in-out;
+        }
+        header nav a:hover{
+            color: blue;
+            text-decoration: overline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .box {
+            background: #ddd;
+            flex: 1 1 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background: #e6e6e6;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        @media(max-width: 768px) {
+            nav{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            header{
+                flex-direction: column;
+                text-align: center;
+                font-size: 18px;   
+            }            
+            header nav a{
+                margin: 5px 0;
+            }
+        }
+
+    
+    </style>
+    <title>Madu's | Business</title>
+</head>
+
+<body>
+    <header>
+        <p>Madu's Business</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="box"> Conteúdo 1</div>
+            <div class="box"> Conteúdo 2</div>
+            <div class="box"> Conteúdo 3</div>
+<footer>
+    <p>&copy; 2025 Madu's Business | Todos os direitos reservados</p>
+</footer>
+</body>
+
+</html>
